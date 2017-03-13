@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tan_background"
+    android:orientation="horizontal">
 
     <ImageView
-        android:contentDescription="item image"
         android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="16dp">
+        android:layout_width="88dp"
+        android:layout_height   ="88dp"
+        android:src="@mipmap/ic_launcher" />
 
-    <TextView
-        android:id="@+id/miwok_text"
-        android:layout_width="wrap_content"
-        tools:text="lutti"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/item_word_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/category_colors"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/default_text"
-        android:layout_width="wrap_content"
-        tools:text="one"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/miwok_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/font_colors"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            tools:text="lutti" />
 
+        <TextView
+            android:id="@+id/default_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:textColor="@color/font_colors"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="one" />
+
+    </LinearLayout>
 </LinearLayout>

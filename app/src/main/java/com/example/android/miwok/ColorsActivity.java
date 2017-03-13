@@ -23,7 +23,7 @@ public class ColorsActivity extends AppCompatActivity {
         colorsArray.add(new Word("mustard yellow", "chiwiite", R.drawable.color_mustard_yellow));
 
 
-        WordAdapter adapter = new WordAdapter(this, colorsArray);
+        WordAdapter adapter = new WordAdapter(this, colorsArray, R.color.category_colors);
 
         GridView gridView = (GridView) findViewById(R.id.list);
 

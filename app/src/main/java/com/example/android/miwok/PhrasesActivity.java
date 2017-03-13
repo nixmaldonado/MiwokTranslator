@@ -25,7 +25,7 @@ public class PhrasesActivity extends AppCompatActivity {
         wordArray.add(new Word("Come here.", "әnni'nem"));
 
 
-        WordAdapter adapter = new WordAdapter(this, wordArray);
+        WordAdapter adapter = new WordAdapter(this, wordArray, R.color.category_phrases);
 
         GridView gridView = (GridView) findViewById(R.id.list);
 

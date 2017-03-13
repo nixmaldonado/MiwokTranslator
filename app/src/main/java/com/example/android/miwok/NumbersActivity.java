@@ -25,7 +25,7 @@ public class NumbersActivity extends AppCompatActivity {
         numbersArray.add(new Word("ten", "na’aacha", R.drawable.number_ten));
 
 
-        WordAdapter adapter = new WordAdapter(this, numbersArray);
+        WordAdapter adapter = new WordAdapter(this, numbersArray, R.color.category_numbers);
 
         GridView gridView = (GridView) findViewById(R.id.list);
 
