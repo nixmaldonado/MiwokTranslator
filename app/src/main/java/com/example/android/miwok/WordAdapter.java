@@ -23,7 +23,6 @@ public class WordAdapter extends ArrayAdapter {
         backgroundColor = color;
     }
 
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -54,4 +53,5 @@ public class WordAdapter extends ArrayAdapter {
 
         return contentView;
     }
+
 }
