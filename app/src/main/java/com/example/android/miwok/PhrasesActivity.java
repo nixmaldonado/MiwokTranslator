@@ -1,5 +1,7 @@
 package com.example.android.miwok;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,15 +11,35 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT;
+import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
+
 public class PhrasesActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
-
+    AudioManager.OnAudioFocusChangeListener audioFocusListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
+                releaseMediaPlayer();
+            } else if (focusChange == AUDIOFOCUS_LOSS_TRANSIENT) {
+                mediaPlayer.pause();
+                mediaPlayer.seekTo(0);
+            } else if (focusChange == AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+                mediaPlayer.pause();
+                mediaPlayer.seekTo(0);
+            } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
+                mediaPlayer.start();
+            }
+        }
+    };
     private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
             releaseMediaPlayer();
         }
     };
+    private AudioManager audioManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +56,7 @@ public class PhrasesActivity extends AppCompatActivity {
         wordArray.add(new Word("Let’s go.", "yoowutis", R.raw.phrase_lets_go));
         wordArray.add(new Word("Come here.", "әnni'nem", R.raw.phrase_come_here));
 
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         WordAdapter adapter = new WordAdapter(this, wordArray, R.color.category_phrases);
 
@@ -47,13 +70,26 @@ public class PhrasesActivity extends AppCompatActivity {
 
                 Word word = wordArray.get(position);
                 releaseMediaPlayer();
-                mediaPlayer = MediaPlayer.create(PhrasesActivity.this, word.getAudioId());
+                int result = audioManager.requestAudioFocus(audioFocusListener, AudioManager.STREAM_MUSIC,
+                        AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
-                mediaPlayer.start();
-                mediaPlayer.setOnCompletionListener(completionListener);
+                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+
+                    mediaPlayer = MediaPlayer.create(PhrasesActivity.this, word.getAudioId());
+
+                    mediaPlayer.start();
+                    mediaPlayer.setOnCompletionListener(completionListener);
+                }
             }
         });
 
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+        audioManager.abandonAudioFocus(audioFocusListener);
     }
 
     private void releaseMediaPlayer() {

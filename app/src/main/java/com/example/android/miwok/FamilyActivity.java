@@ -1,5 +1,7 @@
 package com.example.android.miwok;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,16 +11,42 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT;
+import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
+
 public class FamilyActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
-
+    AudioManager.OnAudioFocusChangeListener audioFocusListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
+                releaseMediaPlayer();
+            } else if (focusChange == AUDIOFOCUS_LOSS_TRANSIENT) {
+                mediaPlayer.pause();
+                mediaPlayer.seekTo(0);
+            } else if (focusChange == AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+                mediaPlayer.pause();
+                mediaPlayer.seekTo(0);
+            } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
+                mediaPlayer.start();
+            }
+        }
+    };
     private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
             releaseMediaPlayer();
         }
     };
+    private AudioManager audioManager;
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
+        audioManager.abandonAudioFocus(audioFocusListener);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +64,7 @@ public class FamilyActivity extends AppCompatActivity {
         wordArray.add(new Word("grandmother", "ama", R.drawable.family_grandmother, R.raw.family_grandmother));
         wordArray.add(new Word("grandfather", "paapa", R.drawable.family_grandfather, R.raw.family_grandfather));
 
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         WordAdapter adapter = new WordAdapter(this, wordArray, R.color.category_family);
 
@@ -49,10 +78,17 @@ public class FamilyActivity extends AppCompatActivity {
 
                 Word word = wordArray.get(position);
                 releaseMediaPlayer();
-                mediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioId());
+                int result = audioManager.requestAudioFocus(audioFocusListener, AudioManager.STREAM_MUSIC,
+                        AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
-                mediaPlayer.start();
-                mediaPlayer.setOnCompletionListener(completionListener);
+                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+
+                    mediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioId());
+
+                    mediaPlayer.start();
+                    mediaPlayer.setOnCompletionListener(completionListener);
+                }
+
             }
         });
 
