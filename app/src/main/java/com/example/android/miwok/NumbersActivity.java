@@ -1,5 +1,6 @@
 package com.example.android.miwok;
 
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -56,6 +57,7 @@ public class NumbersActivity extends AppCompatActivity {
         numbersArray.add(new Word("nine", "wo’e", R.drawable.number_nine, R.raw.number_nine));
         numbersArray.add(new Word("ten", "na’aacha", R.drawable.number_ten, R.raw.number_ten));
 
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         WordAdapter adapter = new WordAdapter(this, numbersArray, R.color.category_numbers);
 
