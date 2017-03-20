@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
+        jar="C:\code\MiwokTranslator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="061ab14a248e3f4af4e89fa703f0b5744ec20611">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_496a5fd6e6841554176f13c9830e95f41334e94c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Nicolas Maldonado\.android\build-cache\e294a322f7b12028720f8646be9720bf641c1e31\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
         <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e72abdd644f8d3f5594bb9019bd3641ea97de184\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\code\MiwokTranslator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fdfcbc94118685b94aea0f123f71912bd04ee5b7">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_496a5fd6e6841554176f13c9830e95f41334e94c\classes.dex" />
     </item>
     <item
         is-multidex="true"
