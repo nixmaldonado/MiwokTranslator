@@ -3,75 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="C:\code\MiwokTranslator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="061ab14a248e3f4af4e89fa703f0b5744ec20611">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_496a5fd6e6841554176f13c9830e95f41334e94c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\e294a322f7b12028720f8646be9720bf641c1e31\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e72abdd644f8d3f5594bb9019bd3641ea97de184\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\069d726539c7a53bd791f83aab0775373612dc5b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_854ffefff788ccecfcd2e0e5c5dcb42e832d811a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\67834f9c8c68d406090fdb7023f1d80760e4ba37\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6817987a90b83a6f6eceb2ec3882ea728493f0d0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\e294a322f7b12028720f8646be9720bf641c1e31\output\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_ff13985be6c1b302d43a18a9c84831763ff66d17\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\e017894a011370c91da7bc11649ceeb2ee8c4a6e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4e933a469ba9481781278811e715e9bd751cc861\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\5a93f7b1d53b07f9e7ebb38a1dec0d86e24f7daa\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aa7ef1641f5f4911e10e6b7b8c47f8760547b951\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Nicolas Maldonado\.android\build-cache\4d7174073c837e1832ffdd9856140783c5c0c7b3\output\jars\classes.jar"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\203894f5f9bd453b745413d3d422c281cf959159\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7a93182937bb12bc72b1dcca13900a509e9fce11\classes.dex" />
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8755652a962e5518dc9b41f8487e2f739d668523\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\0d268ffaccb172d96b26c3674c049e9b3a43e988\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_063526f15ad180049cdf40c1ed7e944c36ac8a11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\code\MiwokTranslator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bb02bdb69b360a61c26c33b4188a03484aab71bb">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_496a5fd6e6841554176f13c9830e95f41334e94c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -81,6 +36,51 @@
         revision="25.0.0"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
         <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b9136f4f697fdaa8ea538b7244e9523d542a3a50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\a3aad8a1cb37bf210a05ff672d53e6e01514de2a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ca4eaec9fae8dc11221b85c26d6e0ebcfce21b60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\515e9e4be86a7d0c10564c537299d9e4a51404d8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_640c727c052d43add9cc32f907708c26176f3729\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\a36660179031177c7e992fc33f2ab420cb3e2a4b\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_909cac5d6907f0f04701e0fe8bc67455353c0c36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\edbc320f205c59d945f00a162fb6a97957b89cc8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f56a719e2972543cbedb78c3e18743d245d921fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nicolas Maldonado\.android\build-cache\a36660179031177c7e992fc33f2ab420cb3e2a4b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\code\MiwokTranslator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ad803746f6a51ff35eda9fc9ecd5ea76f880fe4c\classes.dex" />
     </item>
 
 </items>
