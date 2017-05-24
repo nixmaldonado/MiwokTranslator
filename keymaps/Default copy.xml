@@ -6,12 +6,8 @@
   <action id="ActivateTODOToolWindow" />
   <action id="Arrangement.Rule.Edit" />
   <action id="ContextHelp" />
-  <action id="EditorSelectWord">
-    <keyboard-shortcut first-keystroke="ctrl w" />
-    <keyboard-shortcut first-keystroke="shift ctrl add" />
-  </action>
   <action id="ExpandAllRegions">
-    <keyboard-shortcut first-keystroke="shift ctrl equals" />
+    <keyboard-shortcut first-keystroke="shift ctrl add" />
   </action>
   <action id="FileStructurePopup">
     <keyboard-shortcut first-keystroke="ctrl f12" />
