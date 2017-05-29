@@ -8,10 +8,11 @@
   </action>
   <action id="ActivateTODOToolWindow" />
   <action id="Arrangement.Rule.Edit" />
-  <action id="CloseAllEditors">
-    <keyboard-shortcut first-keystroke="shift c" />
+  <action id="CloseActiveTab">
+    <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
   <action id="ContextHelp" />
+  <action id="EditorSelectWord" />
   <action id="ExpandAllRegions">
     <keyboard-shortcut first-keystroke="shift ctrl add" />
   </action>
