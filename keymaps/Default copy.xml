@@ -8,6 +8,9 @@
   </action>
   <action id="ActivateTODOToolWindow" />
   <action id="Arrangement.Rule.Edit" />
+  <action id="CleanGradleProject">
+    <keyboard-shortcut first-keystroke="alt f5" />
+  </action>
   <action id="CloseActiveTab">
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
