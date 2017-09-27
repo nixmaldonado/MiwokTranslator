@@ -1,0 +1,14 @@
+<scheme name="Nix Dracula " version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="created">2017-09-27T09:13:52</property>
+    <property name="ide">AndroidStudio</property>
+    <property name="ideVersion">2.3.3.0</property>
+    <property name="modified">2017-09-27T09:13:54</property>
+    <property name="originalScheme">Nix Dracula copy copy</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
+  <option name="EDITOR_FONT_SIZE" value="20" />
+  <option name="CONSOLE_FONT_NAME" value="Monospaced" />
+  <option name="CONSOLE_FONT_SIZE" value="16" />
+  <option name="EDITOR_FONT_NAME" value="Consolas" />
+</scheme>
