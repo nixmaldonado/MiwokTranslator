@@ -1,5 +1,7 @@
 <templateSet group="Android">
-  <template name="moneyFormat" value="sadfasf" description="Format Money" toReformat="false" toShortenFQNames="true">
-    <context />
+  <template name="moneyFormat" value="   private static final Locale locale = new Locale(&quot;es&quot;, &quot;AR&quot;);&#10;    public static String formatMoney(String amountString) {&#10;&#10;        Double amount = Double.parseDouble(amountString);&#10;&#10;        amount = (amount &lt; 0 ? -amount : amount);&#10;        NumberFormat formatter = NumberFormat.getCurrencyInstance(locale);&#10;&#10;        return formatter.format(amount);&#10;    }" description="Format Money" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
   </template>
 </templateSet>
