@@ -1,0 +1,5 @@
+<templateSet group="Android">
+  <template name="moneyFormat" value="sadfasf" description="Format Money" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>
